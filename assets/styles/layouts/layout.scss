@@ -16,6 +16,7 @@
       display: block;
     }
     .content {
+      overflow: hidden;
       flex-grow: none;
       width: 70vw;
       margin-left: 30vw;

@@ -19,6 +19,23 @@ import Header from '~/components/Header.vue'
                 return this.$nuxt._route.name === "info" && true
             }
         },
+        transition (to, from) {
+            if (!from) { return 'slide-left' }
+            return +to.query.page < +from.query.page ? 'slide-right' : 'slide-left'
+        },
     }
 </script>
+
+<style>
+.page-enter-active,
+.page-leave-active {
+  transition: all 1s;
+}
+.page-enter,
+.page-leave-to {
+    transition: all .5s;
+    opacity: 0;
+    transform: translate(-500px, 0);
+}
+</style>
 
