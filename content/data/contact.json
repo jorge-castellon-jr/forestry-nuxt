@@ -1,3 +1,7 @@
 {
-    
+  "phone_": true,
+  "email_": false,
+  "address": "1014 Eleanor Lane",
+  "phone": "(916) 582-2335",
+  "email": ""
 }
