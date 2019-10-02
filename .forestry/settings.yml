@@ -4,6 +4,13 @@ auto_deploy: false
 admin_path: "/dist"
 webhook_url: 
 sections:
+- type: directory
+  path: content/pages
+  label: Pages
+  create: documents
+  match: "**/*"
+  templates:
+  - pages
 - type: heading
   label: Content
 - type: directory
@@ -22,7 +29,6 @@ sections:
 - type: document
   path: content/data/contact.json
   label: Contact page
-  match: "**/*"
 - type: heading
   label: Config
 - type: document
