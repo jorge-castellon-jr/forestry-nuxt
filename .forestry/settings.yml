@@ -19,6 +19,10 @@ sections:
 - type: document
   path: content/data/info.json
   label: Info Page
+- type: document
+  path: content/data/contact.json
+  label: Contact page
+  match: "**/*"
 - type: heading
   label: Config
 - type: document
