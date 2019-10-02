@@ -3,27 +3,27 @@ label: Contact
 hide_body: true
 fields:
 - type: text
-  name: description
-  label: description
-- type: textarea
-  name: cta
-  label: cta
-- type: field_group
-  name: contact
-  label: contact
-  fields:
-  - type: text
-    name: email
-    label: email
-  - type: text
-    name: twitter_handle
-    label: twitter_handle
-  - type: text
-    name: github_handle
-    label: github_handle
-- type: text
-  name: background_color
-  label: background_color
-- type: text
-  name: text_color
-  label: text_color
+  name: address
+  label: Address
+- name: phone_
+  type: boolean
+  label: Phone?
+- name: phone
+  type: text
+  config:
+    required: false
+  label: Phone
+  showOnly:
+    field: phone_
+    value: true
+- name: email_
+  type: boolean
+  label: Email?
+- name: email
+  type: text
+  config:
+    required: false
+  label: Email
+  showOnly:
+    field: email_
+    value: true
