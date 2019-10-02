@@ -7,6 +7,13 @@ sections:
 - type: heading
   label: Content
 - type: directory
+  path: content/pages
+  label: Pages
+  create: documents
+  match: "**/*"
+  templates:
+  - pages
+- type: directory
   path: content/blog-posts
   label: Blog Posts
   create: documents
@@ -19,13 +26,6 @@ sections:
 - type: document
   path: content/data/info.json
   label: Info Page
-- type: directory
-  path: content/pages
-  label: Pages
-  create: documents
-  match: "**/*"
-  templates:
-  - pages
 - type: document
   path: content/data/contact.json
   label: Contact page
