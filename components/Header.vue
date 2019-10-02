@@ -1,9 +1,12 @@
 <template>
     <header class="header">
         <nav class="nav">
-            <NuxtLink to="/">
-                <h1>The Blog Title</h1>
-            </NuxtLink>
+            <div>
+                <NuxtLink to="/">
+                    <h1>{{ header.title }}</h1>
+                </NuxtLink>
+                <p>{{ header.description }}</p>
+            </div>
             <div>
                 <h1>
                     <NuxtLink :to="infoRoute">{{ isInfoPage ? "close" : "info" }}</NuxtLink>
@@ -14,7 +17,14 @@
 </template>
 
 <script>
+    import configJSON from '~/content/data/config.json'
+
     export default {
+        data () {
+            return {
+                header: configJSON,
+            }
+        },
         props: {
                 isInfoPage: {
                     type: Boolean,
