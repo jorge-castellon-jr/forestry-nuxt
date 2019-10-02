@@ -24,7 +24,7 @@ sections:
 - type: document
   path: content/data/config.json
   label: Site Info
-upload_dir: media/static
+upload_dir: static/media
 public_path: ''
 front_matter_path: ''
 use_front_matter_path: false
