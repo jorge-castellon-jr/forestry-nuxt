@@ -5,16 +5,6 @@ fields:
 - name: links
   type: field_group_list
   fields:
-  - name: title
-    type: text
-    config:
-      required: false
-    label: Link Title
-  - name: link
-    type: text
-    config:
-      required: false
-    label: Link
   - name: page
     type: select
     default: []
@@ -22,7 +12,7 @@ fields:
       required: false
       options: []
       source:
-        type: documents
+        type: pages
         section: pages
         file: 
         path: 
