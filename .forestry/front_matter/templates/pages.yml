@@ -20,5 +20,6 @@ fields:
     maxSize: 250
   label: Featured Image
 pages:
+- content/pages/jarrett-the-beast-man.md
 - content/pages/about.md
 - content/pages/test.md
