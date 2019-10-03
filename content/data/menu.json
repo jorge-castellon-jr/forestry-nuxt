@@ -1,7 +1,7 @@
 {
   "links": [
     {
-      "page": "",
+      "page": "content/pages/jarrett-the-beast-man.md",
       "link_title": ""
     },
     {
@@ -10,7 +10,7 @@
     },
     {
       "page": "content/pages/about.md",
-      "link_title": ""
+      "link_title": "About This Blog"
     }
   ]
 }
