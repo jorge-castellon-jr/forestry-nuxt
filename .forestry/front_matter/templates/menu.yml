@@ -12,7 +12,7 @@ fields:
       required: false
       options: []
       source:
-        type: pages
+        type: simple
         section: pages
         file: 
         path: 
