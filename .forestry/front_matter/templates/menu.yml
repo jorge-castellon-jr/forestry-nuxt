@@ -24,7 +24,7 @@ fields:
       source:
         type: documents
         section: pages
-        file: content/pages/test.md
+        file: 
         path: 
     label: Page
   config:
