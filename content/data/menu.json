@@ -1,9 +1,7 @@
 {
   "links": [
     {
-      "page": [
-
-      ]
+      "page": "content/pages/test.md"
     },
     {
       "page": "content/pages/about.md"
