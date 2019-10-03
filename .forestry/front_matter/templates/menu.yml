@@ -12,11 +12,16 @@ fields:
       required: false
       options: []
       source:
-        type: simple
+        type: pages
         section: pages
         file: 
         path: 
     label: Page
+  - name: link_title
+    type: text
+    config:
+      required: false
+    label: Link Title
   config:
     min: 
     max: 
