@@ -1,13 +1,16 @@
 {
   "links": [
     {
-      "page": "content/pages/jarrett-the-beast-man.md"
+      "page": "",
+      "link_title": ""
     },
     {
-      "page": "content/pages/test.md"
+      "page": "content/pages/test.md",
+      "link_title": "Testing Link"
     },
     {
-      "page": "content/pages/about.md"
+      "page": "content/pages/about.md",
+      "link_title": ""
     }
   ]
 }
