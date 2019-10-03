@@ -22,3 +22,5 @@ fields:
     max: 
     labelField: 
   label: Links
+pages:
+- content/data/menu.json
