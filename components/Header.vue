@@ -8,8 +8,14 @@
                 <p>{{ header.description }}</p>
             </div>
             <div>
+                <nuxt-link v-for="page in pages" :key="page" :to="`/pages${page.link}`">{{ page.title }}</nuxt-link>
+            </div>
+            <div>
                 <h1>
-                    <NuxtLink :to="infoRoute">{{ isInfoPage ? "close" : "info" }}</NuxtLink>
+                    <NuxtLink to="/info">info</NuxtLink>
+                </h1>
+                <h1>
+                    <NuxtLink to="/contact">contact</NuxtLink>
                 </h1>
             </div>
         </nav>
@@ -23,17 +29,9 @@
         data () {
             return {
                 header: configJSON,
-            }
-        },
-        props: {
-                isInfoPage: {
-                    type: Boolean,
-                    required: false
-            }
-        }, 
-        computed: {
-            infoRoute() {
-                return this.isInfoPage ? "/" : "/info"
+                pages: [
+                    { title: 'Test', link: '/test' }
+                ]
             }
         }
     }
