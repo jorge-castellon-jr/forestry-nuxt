@@ -37,7 +37,6 @@ sections:
 - type: document
   path: content/data/menu.json
   label: Menu
-  match: "**/*"
 upload_dir: static/media
 public_path: ''
 front_matter_path: ''
